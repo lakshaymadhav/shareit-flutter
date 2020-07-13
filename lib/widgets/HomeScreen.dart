@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shareit/widgets/fileselector.dart';
 import './app_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,7 +21,9 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 GestureDetector(
-                  onTap: () => null,
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>FileSelector()));
+                  },
                   child: Column(children: <Widget>[
                     Container(
                         height: 100,
@@ -55,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      "Send",
+                      "Receive",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 25,

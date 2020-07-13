@@ -21,6 +21,11 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  folder_picker: ^0.3.0
+  path_provider: ^1.6.11
+  permission: ^0.1.7
+  storage_path: ^0.0.8
+
   flutter:
     sdk: flutter
   adobe_xd: ^0.1.4  
